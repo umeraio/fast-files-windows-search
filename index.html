@@ -168,14 +168,50 @@
             background: linear-gradient(145deg, #1c2128, #161b22);
             border-left: 5px solid var(--accent-cyan);
         }
+
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            border: 2px solid var(--accent-gold);
+            background: linear-gradient(135deg, var(--accent-gold), #ffed4e);
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(255, 193, 7, 0.8), inset 0 0 10px rgba(255,255,255,0.3);
+            border-color: #fff;
+            filter: brightness(1.1);
+        }
+
+        .home-btn:active {
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Everything Search Masterclass</h1>
-            <p style="color: var(--text-dim);">One-click commands for lightning-fast file discovery</p>
+            <div class="wrap hero">
+              <a href="https://umeraio.github.io/Tools-Downloads/" class="home-btn">🏠 Home</a>
+              <section class="hero-card">
+                <h1>Everything Search Masterclass</h1>
+                <p style="color: var(--text-dim);">One-click commands for lightning-fast file discovery</p>
+            </section>
         </header>
 
         <div class="intro-box">
